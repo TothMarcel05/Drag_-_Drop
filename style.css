@@ -38,6 +38,10 @@ body {
     background: #eee;
 }
 
+.card-slot.active{
+    background: #86989B;
+}
+
 .card-slot {
     min-height: 100px;
     min-width: 130px;

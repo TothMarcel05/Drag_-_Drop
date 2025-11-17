@@ -31,6 +31,7 @@ function initElements() {
     ui.cards.forEach(function (card) {
         card.setAttribute("draggable", true);
     });
+
 }
 
 function shuffleCards() {
@@ -49,6 +50,7 @@ function initDragEvents() {
     ui.slots.forEach(function (slot) {
         initDropzone(slot);
     });
+
 }
 
 function initDraggable(draggable) {
@@ -80,6 +82,9 @@ function handleDragOver(e) {
 
 function handleDragEnter(e) {
     console.log("Drag enter of", e.currentTarget);
+    ui.slots.forEach(function (slot){
+            slot.classList.add("active")
+    })
 }
 
 function handleDragLeave(e) {
